@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitud de Permiso Pendiente</title>
+</head>
+<body style="font-family:'Segoe UI',Tahoma,Verdana,Arial,sans-serif; background-color: #f4f4f4; padding: 20px; margin: 0;">
+    <table align="center" width="600" style="background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        <tr>
+            <td style="text-align: center;">
+                <img src="cid:portada" alt="Logo de la empresa" style="max-width: 200px; height: auto;">
+            </td>
+        </tr>
+        <!-- Encabezado -->
+        <tr>
+            <td style="text-align: center;">
+                <h2 style="color: #ff002b; margin-bottom: 5px; font-weight: 600;">Solicitud de Permiso Pendiente</h2>
+                <p style="color: #555; font-size: 14px;">{{nombre_gestionador}}, tiene una nueva solicitud de permiso pendiente para su revisión.</p>
+            </td>
+        </tr>
+
+        <!-- Información del empleado -->
+        <tr>
+            <td style="padding: 10px 0; font-size: 14px;">
+                <p><strong>Nombre del empleado:</strong> {{FirstName}} {{LastName}}</p>
+                <p><strong>ID del empleado:</strong> {{EmpId}}</p>
+                <p><strong>Departamento:</strong> {{DepartmentName}}</p>
+                <p><strong>Sede:</strong> {{Sede}}</p>
+                <p><strong>Fecha de solicitud:</strong> {{PostingDate}}</p>
+                <p><strong>Tipo de permiso:</strong> {{LeaveType}}</p>
+            </td>
+        </tr>
+
+        <!-- Detalles del permiso -->
+        <tr>
+            <td style="padding: 10px 0; font-size: 14px;">
+                <p><strong>Fecha de inicio:</strong> {{FromDate}}</p>
+                <p><strong>Fecha fin:</strong> {{ToDate}}</p>
+                <p><strong>Motivo:</strong></p>
+                <p style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; color: #333; font-style: italic;">
+                    {{Description}}
+                </p>
+            </td>
+        </tr>
+
+        <!-- Estado de la solicitud -->
+        <tr>
+            <td style="padding: 10px 0; font-size: 14px; text-align: center;">
+                <p><strong>Estado:</strong> 
+                    <span style="background-color: {{color_estado}}; color: white; padding: 5px 10px; border-radius: 5px; font-weight: 600;">
+                        {{Status}}
+                    </span>
+                </p>
+            </td>
+        </tr>
+
+        <!-- Llamado a la acción -->
+        <tr>
+            <td style="text-align: center; padding-top: 20px;">
+                <a href="{{link_a_la_aplicación}}" style="background-color: #f50029; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-weight: 600; display: inline-block;">
+                    Revisar solicitud
+                </a>
+            </td>
+        </tr>
+
+        <!-- Pie de página -->
+        <tr>
+            <td style="text-align: center; padding-top: 20px; font-size: 12px; color: #888;">
+                <p>Este es un mensaje automático, por favor no responda.</p>
+                <p>&copy; 2025 Sistema de Permisos - {{nombre_empresa}}</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

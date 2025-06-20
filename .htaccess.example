@@ -1,0 +1,13 @@
+SetEnv DB_HOST localhost
+SetEnv DB_USER root
+SetEnv DB_PASS 
+SetEnv DB_NAME db
+
+SetEnv CORREO_HOST smtp.office365.com
+SetEnv CORREO correo@outlook.com
+SetEnv CORREO_PASS contrasena
+
+SetEnv PORT puerto
+SetEnv BASE_URL PROJECT_NAME
+
+SetEnv EMAIL_GESTION_HUMANA gestionhumana@gmail.com

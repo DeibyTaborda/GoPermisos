@@ -1,0 +1,10 @@
+.htaccess
+vendor
+
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+*.pdf

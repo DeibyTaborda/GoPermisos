@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+#container-general {
+    display: flex;
+    height: 100%;
+    background-image: url('../../assets/images/index_home.png');
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#container-general::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(14, 14, 14, 0.5);
+    z-index: 0;
+}
+
+#container-general > * {
+    position: relative;
+    z-index: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+h1 {
+    color: white;
+}
+
+label {
+    margin: 10px 0 5px 0;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(41, 98, 255, 0.2);
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-dark);
+    transition: background-color 0.3s ease;
+}
+
+.error-message {
+    color: #e53935;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

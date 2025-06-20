@@ -1,0 +1,34 @@
+body {
+    background-color: #F4F4F4;
+}
+
+#form-user {
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+span {
+    margin-left: 20px;
+}
+
+#container-checkboxes {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+}
+
+@media (max-width: 1000px) {
+    #container-checkboxes {
+        grid-template-columns: 1fr;
+    }
+}
+
+  @media (max-width: 500px) {
+    #form-user {
+        grid-template-columns: 1fr;
+    }
+}
